@@ -1,0 +1,43 @@
+/* Container */
+.tab-container {
+  width: 500px;
+  margin: 30px auto;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+/* Tab buttons */
+.tab-buttons {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 15px;
+}
+
+.tab-button {
+  padding: 12px 25px;
+  border: none;
+  background-color: #f2f2f2;
+  color: #333;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border-bottom: 2px solid transparent;
+}
+
+.tab-button:hover {
+  background-color: #e0e0e0;
+}
+
+.tab-button.active {
+  background-color: #007bff;
+  color: white;
+  border-bottom: 2px solid #0056b3;
+}
+
+/* Tab content */
+.tab-content {
+  border: 1px solid #ddd;
+  padding: 20px;
+  border-radius: 5px;
+  background-color: #fafafa;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}

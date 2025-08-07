@@ -1,0 +1,64 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Light Mode */
+.app-container.light {
+  background: linear-gradient(to right, #f8f9fa, #e9ecef);
+  color: #212529;
+}
+
+/* Dark Mode */
+.app-container.dark {
+  background: linear-gradient(to right, #121212, #1f1f1f);
+  color: #f1f1f1;
+}
+
+/* Common Container Styling */
+.app-container {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.5s ease;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Content Box */
+.content-box {
+  text-align: center;
+  padding: 40px;
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.07);
+  backdrop-filter: blur(8px);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease-in-out;
+}
+
+/* Toggle Button */
+.toggle-btn {
+  margin-top: 20px;
+  padding: 12px 28px;
+  font-size: 16px;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.app-container.light .toggle-btn {
+  background-color: #007bff;
+  color: white;
+}
+
+.app-container.dark .toggle-btn {
+  background-color: #ffc107;
+  color: black;
+}
+
+.toggle-btn:hover {
+  opacity: 0.85;
+}

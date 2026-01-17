@@ -1,0 +1,50 @@
+/* ---- layout ---- */
+.container {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 0 16px;
+  font-family: system-ui, sans-serif;
+}
+
+.title {
+  text-align: center;
+  margin-bottom: 24px;
+  color: #2d3748;
+}
+
+/* ---- table ---- */
+.posts-table {
+  width: 100%;
+  border-collapse: collapse;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.posts-table thead {
+  background: #2b6cb0;   /* deep blue */
+  color: #fff;
+}
+
+.posts-table th,
+.posts-table td {
+  padding: 12px 16px;
+  text-align: left;
+}
+
+.posts-table tbody tr:nth-child(even) {
+  background: #f7fafc;   /* zebra stripe */
+}
+
+.posts-table tbody tr:hover {
+  background: #ebf8ff;   /* light‑blue highlight */
+  cursor: pointer;
+}
+
+/* ---- loader ---- */
+.loader {
+  margin-top: 40px;
+  text-align: center;
+  font-size: 1.25rem;
+  color: #2b6cb0;
+}

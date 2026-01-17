@@ -1,0 +1,62 @@
+/* Base Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Light Theme */
+.app-container.light {
+  background: linear-gradient(to right, #e0eafc, #cfdef3);
+  color: #222;
+}
+
+/* Dark Theme */
+.app-container.dark {
+  background: linear-gradient(to right, #141e30, #243b55);
+  color: #fff;
+}
+
+/* Common Styles */
+.app-container {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background 0.5s ease, color 0.3s ease;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.content-box {
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.05);
+  padding: 40px;
+  border-radius: 20px;
+  backdrop-filter: blur(5px);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease-in-out;
+}
+
+.toggle-btn {
+  margin-top: 20px;
+  padding: 12px 24px;
+  font-size: 16px;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.app-container.light .toggle-btn {
+  background-color: #4a90e2;
+  color: white;
+}
+
+.app-container.dark .toggle-btn {
+  background-color: #f5a623;
+  color: black;
+}
+
+.toggle-btn:hover {
+  opacity: 0.9;
+}
